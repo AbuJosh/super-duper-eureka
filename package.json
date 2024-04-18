@@ -1,0 +1,15 @@
+{
+  "name": "bka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "tailwindcss build -i ./src/input.css -o ./docs/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "caniuse-lite": "^1.0.30001611",
+    "tailwindcss": "^3.4.3"
+  }
+}
