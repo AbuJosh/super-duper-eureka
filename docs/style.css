@@ -856,6 +856,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1033,6 +1037,10 @@ video {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .font-\[Lumanosimo\] {
   font-family: Lumanosimo;
 }
@@ -1110,6 +1118,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .lowercase {
@@ -1314,6 +1326,11 @@ video {
   .md\:gap-x-96 {
     -moz-column-gap: 24rem;
          column-gap: 24rem;
+  }
+
+  .md\:gap-x-72 {
+    -moz-column-gap: 18rem;
+         column-gap: 18rem;
   }
 
   .md\:text-3xl {
