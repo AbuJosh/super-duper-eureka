@@ -72,9 +72,11 @@ slider.addEventListener('touchend', (e) => {
 
 function handleSwipe() {
     if (startX - endX > 50) { // Swipe left
-        next.click();
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
     } else if (endX - startX > 50) { // Swipe right
-        prev.click();
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
     }
 }
 
