@@ -28,34 +28,56 @@ let dots = document.querySelectorAll('.slider .dots li');
 
 let lengthItems = items.length - 1;
 let active = 0;
+let startX = 0;
+let endX = 0;
+
 next.onclick = function(){
     active = active + 1 <= lengthItems ? active + 1 : 0;
     reloadSlider();
 }
+
 prev.onclick = function(){
     active = active - 1 >= 0 ? active - 1 : lengthItems;
     reloadSlider();
 }
-let refreshInterval = setInterval(()=> {next.click()}, 3000);
+
+let refreshInterval = setInterval(() => {next.click()}, 3000);
+
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
-    // 
+
     let last_active_dot = document.querySelector('.slider .dots li.active');
     last_active_dot.classList.remove('active');
     dots[active].classList.add('active');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next.click()}, 10000);
-
-    
+    refreshInterval = setInterval(() => {next.click()}, 10000);
 }
 
 dots.forEach((li, key) => {
-    li.addEventListener('click', ()=>{
+    li.addEventListener('click', () => {
          active = key;
          reloadSlider();
-    })
-})
+    });
+});
+
+slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    if (startX - endX > 50) { // Swipe left
+        next.click();
+    } else if (endX - startX > 50) { // Swipe right
+        prev.click();
+    }
+}
+
 window.onresize = function(event) {
     reloadSlider();
 };
