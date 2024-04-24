@@ -83,3 +83,8 @@ function handleSwipe() {
 window.onresize = function(event) {
     reloadSlider();
 };
+
+OnlineWebFonts_Com({
+    'Id':'.div',
+    'Data':__Animations['534882'],
+}).Play();
