@@ -602,10 +602,6 @@ video {
   z-index: 50;
 }
 
-.float-start {
-  float: inline-start;
-}
-
 .float-left {
   float: left;
 }
@@ -690,10 +686,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -754,16 +746,12 @@ video {
   height: 12rem;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .h-\[250px\] {
   height: 250px;
 }
 
-.h-\[46rem\] {
-  height: 46rem;
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[50px\] {
@@ -772,18 +760,6 @@ video {
 
 .h-auto {
   height: auto;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-9 {
-  height: 2.25rem;
 }
 
 .max-h-\[25rem\] {
@@ -818,6 +794,10 @@ video {
   width: 100%;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -848,24 +828,16 @@ video {
   width: max-content;
 }
 
-.w-\[300px\] {
-  width: 300px;
+.w-\[42rem\] {
+  width: 42rem;
 }
 
-.w-\[30px\] {
-  width: 30px;
+.w-\[30rem\] {
+  width: 30rem;
 }
 
-.w-\[60px\] {
-  width: 60px;
-}
-
-.w-\[90px\] {
-  width: 90px;
-}
-
-.w-\[100px\] {
-  width: 100px;
+.w-\[400px\] {
+  width: 400px;
 }
 
 .min-w-full {
@@ -949,6 +921,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -959,10 +935,6 @@ video {
 
 .rounded-none {
   border-radius: 0px;
-}
-
-.rounded-\[10px\] {
-  border-radius: 10px;
 }
 
 .border-0 {
@@ -1356,12 +1328,37 @@ video {
     height: 12rem;
   }
 
-  .md\:h-9 {
-    height: 2.25rem;
+  .md\:h-\[84rem\] {
+    height: 84rem;
   }
 
-  .md\:h-\[100\%\] {
-    height: 100%;
+  .md\:h-\[48rem\] {
+    height: 48rem;
+  }
+
+  .md\:h-\[30rem\] {
+    height: 30rem;
+  }
+
+  .md\:h-\[35rem\] {
+    height: 35rem;
+  }
+
+  .md\:h-\[38rem\] {
+    height: 38rem;
+  }
+
+  .md\:h-\[37rem\] {
+    height: 37rem;
+  }
+
+  .md\:h-\[36rem\] {
+    height: 36rem;
+  }
+
+  .md\:max-h-max {
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .md\:min-h-fit {
@@ -1371,10 +1368,6 @@ video {
 
   .md\:w-48 {
     width: 12rem;
-  }
-
-  .md\:w-\[11\%\] {
-    width: 11%;
   }
 
   .md\:w-auto {
@@ -1413,10 +1406,6 @@ video {
   .md\:gap-x-96 {
     -moz-column-gap: 24rem;
          column-gap: 24rem;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 
   .md\:text-3xl {
